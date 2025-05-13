@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Shafa Gems and Jewellery</title><link rel="stylesheet" href="style.css"></head><body>
+<header><img src="images/Al Shafa Logo.png" alt="Al Shafa Logo" class="logo">
+<div class="header-content"><h1>Al Shafa Gems and Jewellery</h1><p>Elegance Crafted with Passion</p></div></header>
+<nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<div class="slideshow-container">
+  <div class="mySlides fade"><img src="images/slide1.jpg" class="slide-img" alt="Slide 1" /></div>
+  <div class="mySlides fade"><img src="images/slide2.jpg" class="slide-img" alt="Slide 2" /></div>
+  <div class="mySlides fade"><img src="images/slide3.jpg" class="slide-img" alt="Slide 3" /></div>
+</div>
+<section class="gems"> 
+  <h2>Featured Gems</h2>
+  <div class="product-gallery">
+    <div class="product-card"><img src="images/ruby.jpg" alt="Ruby"><h3>Ruby Stone</h3><p>Price: AED 1,500</p>
+    <a href="https://wa.me/971501234567" target="_blank" class="btn">Enquire Price</a></div>
+    <div class="product-card"><img src="images/emerald.jpg" alt="Emerald"><h3>Emerald Stone</h3><p>Price: AED 2,200</p>
+    <a href="https://wa.me/971501234567" target="_blank" class="btn">Enquire Price</a></div>
+    <div class="product-card"><img src="images/sapphire.jpg" alt="Sapphire"><h3>Blue Sapphire</h3><p>Price: AED 3,000</p>
+    <a href="https://wa.me/971501234567" target="_blank" class="btn">Enquire Price</a></div>
+  </div>
+</section>
+<footer><p>&copy; 2025 Al Shafa Gems and Jewellery. All rights reserved.</p></footer>
+<script>
+let slideIndex = 0;
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+  slideIndex++; if (slideIndex > slides.length) slideIndex = 1;
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000);
+}
+showSlides();
+</script></body></html>
