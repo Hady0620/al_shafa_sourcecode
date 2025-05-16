@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Al Shafa Jewellery</title><link rel="stylesheet" href="fixed_dropdown_css.css">
+<title>Al Shafa Jewellery</title><link rel="stylesheet" href="enhanced_styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -60,9 +60,14 @@
 let slideIndex = 0;
 function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
-  for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
-  slideIndex++; if (slideIndex > slides.length) slideIndex = 1;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
   slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].classList.add("active");
   setTimeout(showSlides, 3000);
 }
 showSlides();
