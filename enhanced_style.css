@@ -82,7 +82,7 @@ header {
 
 /* Navigation */
 .topnav {
-  overflow: hidden;
+  overflow: visible;
   background-color: var(--dark-gray);
   box-shadow: var(--box-shadow);
   position: sticky;
@@ -139,7 +139,8 @@ header {
 
 .dropdown {
   float: left;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
 }
 
 .dropdown .dropbtn {
@@ -161,6 +162,8 @@ header {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   overflow: hidden;
   animation: fadeIn 0.3s ease;
+  top: 100%;
+  left: 0;
 }
 
 @keyframes fadeIn {
@@ -470,6 +473,7 @@ footer p {
 @media screen and (max-width: 768px) {
   .topnav.responsive {
     position: relative;
+    display: block;
   }
   
   .topnav.responsive .icon {
