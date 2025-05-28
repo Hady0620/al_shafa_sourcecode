@@ -48,13 +48,13 @@ header {
   background: linear-gradient(to right, var(--primary-gold), #c19f30);
   color: var(--white);
   text-align: center;
-  padding: 30px 15px;
+  padding: 18px 10px;   /* Reduced from 30px 15px */
   position: relative;
 }
 
 .logo {
-  width: 150px;
-  margin-top: 10px;
+  width: 110px;         /* Reduced from 150px */
+  margin-top: 5px;      /* Slightly less margin */
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
   transition: var(--transition);
 }
@@ -68,7 +68,7 @@ header {
 }
 
 .header-content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;      /* Reduced from 2.5rem */
   text-shadow: var(--text-shadow);
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -76,7 +76,7 @@ header {
 
 .header-content p {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1rem;      /* Reduced from 1.2rem */
   opacity: 0.9;
 }
 
