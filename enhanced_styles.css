@@ -202,8 +202,9 @@ header {
   overflow: hidden;
   height: 500px;
   box-shadow: var(--box-shadow);
-  clear: both; /* Clear the float from navigation */
+  clear: both;
   width: 100%;
+  background: #fff; /* Set slideshow background to white */
 }
 
 .slide-img {
@@ -224,6 +225,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  background: #fff; /* Each slide background to white */
 }
 
 .fade {
