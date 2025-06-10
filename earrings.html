@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earrings - Al Shafa Jewellery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="enhanced_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/Al Shafa Logo.png" alt="Al Shafa Logo" class="logo">
+        <div class="header-content">
+            <h1>Al Shafa Jewellery</h1>
+            <p>Elegance Crafted with Passion</p>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">GEMSTONES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="preciousgemstone.html">PRECIOUS GEMSTONES</a>
+                <a href="semipreciousgemstone.html">SEMI PRECIOUS GEMSTONES</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">JEWELLERY
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ring.html">RING</a>
+                <a href="necklace.html">NECLACES</a>
+                <a href="earrings.html" class="active">EARRINGS</a>
+                <a href="bracelets.html">BRACELETS</a>
+                <a href="products.html">OUR PRODUCTS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUR SERVICES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">CUSTOMIZE JEWELLERY</a>
+                <a href="#">CUSTOMIZE GEMS STONES</a>
+            </div>
+        </div>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main>
+        <h2 style="text-align:center; color:#8d6748; font-size:2.5em; letter-spacing:2px; margin: 40px 0 30px 0;">Earrings Collection</h2>
+        <div class="product-gallery" style="display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-top:30px;">
+            <div class="product-card">
+                <img src="images/earring1.jpg" alt="Gold Stud Earrings" style="width:180px;height:140px;object-fit:cover;border-radius:8px;border:2px solid #e0c9a6;">
+                <h3>Gold Stud Earrings</h3>
+                <ul style="font-size:0.95em; margin:10px 0 0 0; padding-left:18px;">
+                    <li>Material: 22K Gold</li>
+                    <li>Type: Stud</li>
+                    <li>Weight: 4g</li>
+                    <li>Design: Classic Round</li>
+                </ul>
+            </div>
+            <div class="product-card">
+                <img src="images/earring2.jpg" alt="Diamond Drop Earrings" style="width:180px;height:140px;object-fit:cover;border-radius:8px;border:2px solid #e0c9a6;">
+                <h3>Diamond Drop Earrings</h3>
+                <ul style="font-size:0.95em; margin:10px 0 0 0; padding-left:18px;">
+                    <li>Material: 18K Gold & Diamonds</li>
+                    <li>Type: Drop</li>
+                    <li>Diamond Weight: 0.8ct</li>
+                    <li>Design: Elegant Dangle</li>
+                </ul>
+            </div>
+            <div class="product-card">
+                <img src="images/earring3.jpg" alt="Pearl Earrings" style="width:180px;height:140px;object-fit:cover;border-radius:8px;border:2px solid #e0c9a6;">
+                <h3>Pearl Earrings</h3>
+                <ul style="font-size:0.95em; margin:10px 0 0 0; padding-left:18px;">
+                    <li>Material: Freshwater Pearls & 14K Gold</li>
+                    <li>Type: Stud</li>
+                    <li>Pearl Size: 7mm</li>
+                    <li>Design: Simple Elegance</li>
+                </ul>
+            </div>
+            <div class="product-card">
+                <img src="images/earring4.jpg" alt="Gemstone Hoop Earrings" style="width:180px;height:140px;object-fit:cover;border-radius:8px;border:2px solid #e0c9a6;">
+                <h3>Gemstone Hoop Earrings</h3>
+                <ul style="font-size:0.95em; margin:10px 0 0 0; padding-left:18px;">
+                    <li>Material: 18K Gold & Mixed Gemstones</li>
+                    <li>Type: Hoop</li>
+                    <li>Gemstones: Ruby, Emerald, Sapphire</li>
+                    <li>Design: Colorful Hoops</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Al Shafa Jewellery. All rights reserved.</p>
+    </footer>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+</html>
