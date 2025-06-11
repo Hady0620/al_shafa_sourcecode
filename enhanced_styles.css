@@ -45,11 +45,18 @@ p {
 
 /* Header */
 header {
-  background: linear-gradient(to right, var(--primary-gold), #c19f30);
-  color: var(--white);
+  /* Stylish gold gradient with a soft overlay and subtle pattern */
+  background: linear-gradient(120deg, #fffbe6 0%, #f7e7ce 60%, #d4af37 100%);
+  color: var(--dark-gray);
   text-align: center;
-  padding: 18px 10px;   /* Reduced from 30px 15px */
+  padding: 18px 10px;
   position: relative;
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.10);
+  border-bottom: 3px solid #d4af37;
+  /* Optional: add a subtle pattern overlay */
+  /* background-image: url('images/gold_pattern.png'), linear-gradient(120deg, #fffbe6 0%, #f7e7ce 60%, #d4af37 100%);
+     background-size: 200px, cover;
+     background-repeat: repeat, no-repeat; */
 }
 
 .logo {
@@ -453,6 +460,15 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+/* Gradient background for HOME button */
+.topnav a.active {
+  background: linear-gradient(120deg, #fffbe6 0%, #f7e7ce 60%, #d4af37 100%);
+  color: var(--dark-gray) !important;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.10);
 }
 
 /* Responsive Design */
