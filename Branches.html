@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Branches - Al Shafa Jewellery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="enhanced_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/Al Shafa Logo.png" alt="Al Shafa Logo" class="logo">
+        <div class="header-content">
+            <h1>Al Shafa Jewellery</h1>
+            <p>Elegance Crafted with Passion</p>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">GEMSTONES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="preciousgemstone.html">PRECIOUS GEMSTONES</a>
+                <a href="semipreciousgemstone.html">SEMI PRECIOUS GEMSTONES</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">JEWELLERY
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ring.html">RING</a>
+                <a href="necklace.html">NECLACES</a>
+                <a href="earrings.html">EARRINGS</a>
+                <a href="bracelets.html">BRACELETS</a>
+                <a href="products.html">OUR PRODUCTS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUR SERVICES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">CUSTOMIZE JEWELLERY</a>
+                <a href="#">CUSTOMIZE GEMS STONES</a>
+            </div>
+        </div>
+        <a href="Branches.html" class="active">BRANCHES</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main>
+        <h2 style="text-align:center; color:#8d6748; font-size:2.2em; letter-spacing:2px; margin: 40px 0 30px 0;">Our Branches</h2>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:40px;max-width:1000px;margin:0 auto;">
+            <!-- Al Fahidi Branch -->
+            <div style="background:#fffbe6;border-radius:12px;box-shadow:0 2px 10px #e0c9a6;padding:28px 22px;max-width:400px;flex:1;">
+                <h3 style="color:#bfa14a;margin-bottom:10px;">Al Fahidi Branch</h3>
+                <p style="color:#6b4c1b;font-size:1.05em;margin-bottom:18px;">
+                    18 62 B St, Al Fahidi, 
+                    BurDubai, Dubai
+                </p>
+                <a href="https://maps.google.com?q=Al%20SHAFA%20JEWELLERY%20-%2018%2062%20B%20St%20-%20Al%20Fahidi%20-%20Dubai&ftid=0x3e5f435e7af8e6e7:0xf5d2a2a67779317d&entry=gps&lucs=,94275411,94275312,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304&g_st=com.google.maps.preview.copy"
+                   target="_blank"
+                   style="display:inline-block;background:#bfa14a;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;">
+                    View on Google Maps <i class="fa fa-map-marker"></i>
+                </a>
+            </div>
+            <!-- Gold and Diamond Park Branch -->
+            <div style="background:#fffbe6;border-radius:12px;box-shadow:0 2px 10px #e0c9a6;padding:28px 22px;max-width:400px;flex:1;">
+                <h3 style="color:#bfa14a;margin-bottom:10px;">Gold and Diamond Park Branch</h3>
+                <p style="color:#6b4c1b;font-size:1.05em;margin-bottom:18px;">
+                    Gold and Diamond Park, G41A Bldg-1, Phase 1, Al Quoz Industrial Area 3, Dubai
+                </p>
+                <a href="https://maps.google.com/?geocode=FQx1gQEdg8VLAw%3D%3D;FUlmfwEdoHBKAyl_0wuys0NfPjFhW44ryZdPsg%3D%3D&daddr=Gold%20and%20Diamond%20Park,%20G41A%20Bldg-1,%20Phase%201%20-%20Al%20Quoz%20-%20Al%20Quoz%20Industrial%20Area%203%20-%20Dubai&saddr=25.2613235,55.2974112&dirflg=r&ftid=0x3e5f43b3b20bd37f:0xb24f97c92b8e5b61&lucs=,94275411,94275312,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304&g_st=ic"
+                   target="_blank"
+                   style="display:inline-block;background:#bfa14a;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;">
+                    View on Google Maps <i class="fa fa-map-marker"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Al Shafa Jewellery. All rights reserved.</p>
+    </footer>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+</html>
