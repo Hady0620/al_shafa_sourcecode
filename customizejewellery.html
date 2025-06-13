@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customize Jewellery - Al Shafa Jewellery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="enhanced_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/Al Shafa Logo.png" alt="Al Shafa Logo" class="logo">
+        <div class="header-content">
+            <h1>Al Shafa Jewellery</h1>
+            <p>Elegance Crafted with Passion</p>
+        </div>
+    </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">GEMSTONES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="preciousgemstone.html">PRECIOUS GEMSTONES</a>
+                <a href="semipreciousgemstone.html">SEMI PRECIOUS GEMSTONES</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">JEWELLERY
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ring.html">RING</a>
+                <a href="necklace.html">NECLACES</a>
+                <a href="earrings.html">EARRINGS</a>
+                <a href="bracelets.html">BRACELETS</a>
+                <a href="products.html">OUR PRODUCTS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">OUR SERVICES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="customizejewellery.html" class="active">CUSTOMIZE JEWELLERY</a>
+                <a href="customizegemstone.html">CUSTOMIZE GEMS STONES</a>
+            </div>
+        </div>
+        <a href="Branches.html">BRANCHES</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main>
+        <section class="about" style="margin-bottom:40px;">
+            <h2 style="color:#bfa14a; font-family:'Cinzel',serif; font-size:2em; margin-bottom:18px;">Customize Your Jewellery</h2>
+            <p style="color:#6b4c1b;">
+                Design a piece of jewellery that is truly yours! Choose your preferred gold type, gemstones, and style. Our master craftsmen will bring your vision to life, whether it's a ring, necklace, bracelet, or earrings. Perfect for gifts, special occasions, or personal treasures.
+            </p>
+            <ul style="text-align:left; display:inline-block; margin:0 auto 18px auto; color:#8d6748;">
+                <li>Choose from 18K, 21K, or 22K gold</li>
+                <li>Wide selection of gemstones: Ruby, Emerald, Sapphire, Diamond, and more</li>
+                <li>Custom engravings and unique designs</li>
+                <li>Expert guidance from design to delivery</li>
+            </ul>
+        </section>
+        <section class="contact" style="background:#fffbe6; border-radius:12px; max-width:600px; margin:0 auto 40px auto; box-shadow:0 2px 10px #e0c9a6;">
+            <h3 style="color:#bfa14a; margin-bottom:18px;">Jewellery Customization Request Form</h3>
+            <form action="mailto:your@email.com" method="post" enctype="multipart/form-data">
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="jewellerytype">Jewellery Type*</label>
+                <select id="jewellerytype" name="jewellerytype" required>
+                    <option value="">Select type</option>
+                    <option value="Ring">Ring</option>
+                    <option value="Necklace">Necklace</option>
+                    <option value="Bracelet">Bracelet</option>
+                    <option value="Earrings">Earrings</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="goldtype">Gold Type</label>
+                <select id="goldtype" name="goldtype">
+                    <option value="">Select gold type</option>
+                    <option value="18K">18K</option>
+                    <option value="21K">21K</option>
+                    <option value="22K">22K</option>
+                </select>
+
+                <label for="gemstones">Preferred Gemstones</label>
+                <input type="text" id="gemstones" name="gemstones" placeholder="e.g. Diamond, Ruby, Emerald">
+
+                <label for="details">Additional Details</label>
+                <textarea id="details" name="details" rows="4" placeholder="Describe your custom requirements"></textarea>
+
+                <label for="attachment">Attach Reference Image/Document</label>
+                <input type="file" id="attachment" name="attachment" accept=".jpg,.jpeg,.png,.pdf">
+
+                <button type="submit" class="btn" style="background:#bfa14a; color:#fff; font-weight:600; border:none; padding:12px 28px; border-radius:6px; margin-top:10px;">
+                    Submit Request
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Al Shafa Jewellery. All rights reserved.</p>
+    </footer>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+</html>
