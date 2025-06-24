@@ -112,6 +112,10 @@
     <footer>
         <p>&copy; 2025 Al Shafa Jewellery. All rights reserved.</p>
     </footer>
+    <button id="darkModeToggle" title="Toggle dark mode" style="position: absolute; top: 18px; right: 24px; z-index: 1001; background: #222; color: #fff; border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 1.3em; cursor: pointer;">
+      <i id="darkModeIcon" class="fa fa-moon-o"></i>
+    </button>
+
     <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -121,6 +125,28 @@
             x.className = "topnav";
         }
     }
+
+    function setDarkMode(on) {
+      if(on) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeIcon').classList.remove('fa-moon-o');
+        document.getElementById('darkModeIcon').classList.add('fa-sun-o');
+      } else {
+        document.body.classList.remove('dark-mode');
+        document.getElementById('darkModeIcon').classList.remove('fa-sun-o');
+        document.getElementById('darkModeIcon').classList.add('fa-moon-o');
+      }
+      localStorage.setItem('darkMode', on ? 'on' : 'off');
+    }
+
+    // On page load, check localStorage
+    window.addEventListener('DOMContentLoaded', function() {
+      setDarkMode(localStorage.getItem('darkMode') === 'on');
+      document.getElementById('darkModeToggle').onclick = function() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        setDarkMode(isDark);
+      };
+    });
     </script>
 </body>
 </html>
